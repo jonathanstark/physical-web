@@ -11,7 +11,7 @@ The Physical Web extends the web we know into the physical world around us. This
 Even though this is a fairly simple idea, it immediately generates lots of questions:
 
 ##0. Wait, why are you an app?
-This is an early prototype. We are trying get people to experiment with this at an early stage. Of course, this should be built into the operating system of all smartphones (and tablets and anything with a screen really). We are building an app for now that tries to not feel like an app. It works in the background so you don't need to use it actively. It just silently monitors beacons that you can browse when you're intererested.
+This is an early prototype. We are trying get people to experiment with this at an early stage. Of course, this should be built into the operating system of all smartphones (and tablets and anything with a screen really). We are building an app for now that tries to not feel like an app. It works in the background so you don't need to use it actively. It just silently monitors beacons that you can browse when you're interested.
 
 ##1. Will you be pestering people with alarms?
 A core principle of this system is **no proactive notifications**. The user will only see a list of nearby devices when they ask. If your phone were to be buzzing constantly as you walked through the mall, it would be very frustrating. Push notifications in general are too easily abused. Of course, the user can opt-in to notifications, we are just saying that by default, the user must ask to see anything nearby.
@@ -20,7 +20,7 @@ A core principle of this system is **no proactive notifications**. The user will
 At first, the nearby smart devices will be small but if we're successful, there will be many to choose from and that raises an important UX issue. This is where ranking comes in. Today, we are perfectly happy typing "tennis" into a search engine and getting millions of results back, we trust that the first 10 are the best ones. The same applies here. The phone agent can sort by both signal strength as well as personal preference and history, among many other possible factors. Clearly there is lots of work to be done here. We don't want to minimize this task, but we feel that this simple signal strength ranking can get us very far for the first few versions of this project.
 
 ##3. Is this secure/private?
-URLs broadcast in the clear so anyone can see them. This is by design. That is why we're initially suggesting this to be used in public spaces. This does raise issues for home use where it would be possible for neighbors to intercept beacons. However, one the big advatages of URLs is that there are so many ways they can be used to increase their security:
+URLs broadcast in the clear so anyone can see them. This is by design. That is why we're initially suggesting this to be used in public spaces. This does raise issues for home use where it would be possible for neighbors to intercept beacons. However, one of the big advantages of URLs is that there are so many ways they can be used to increase their security:
 
 * The URL could be obfuscated (e.g. using a non-branded domain)
 * The web page could require a login
@@ -35,7 +35,7 @@ With any system, there will be people that try to exploit it. There will likely 
 ##5. Why URLs?
 The value of a URL is that it is a known part of the web, very flexible, and most importantly, decentralized. URLs allow anyone to play and no central server to be the bottleneck. This is one of the core principles of the web and critical to keep alive.
 
-That being said, we completely expect others to experiment with a url+ID model that goes through their server (e.g. safeurls.com/?id=12345). That is perfectly acceptable and to be encouraged. Systems like that are likely to provide much better security and vetting of sites. But that is the beauty of URLs, there can be as many of these as you'd like and the system still works seamlessly.  
+That being said, we completely expect others to experiment with a url+ID model that goes through their server (e.g. safeurls.com/?id=12345). That is perfectly acceptable and to be encouraged. Systems like that are likely to provide much better security and vetting of sites. But that is the beauty of URLs, there can be as many of these as you'd like and the system still works seamlessly.
 
 ##6. Which platforms will you support?
 This is meant to be an extension of the web so it should work on every platform. We expect that each platform will experiment with a different UX to show the nearby devices. For example, the current Android app uses notifications while the iOS app will use lock screen notifications. We hope to see lots of experimentation here on how various platforms choose to show and rank this information.
@@ -43,7 +43,7 @@ This is meant to be an extension of the web so it should work on every platform.
 At this point, we have both an Android and iOS app that is open source. We hope this will be used and ported to other platforms.
 
 ##7. Can't the user be tracked?
-Our current URL broadcast method involves a bluetooth broadcast from each beacon. The user's phone gathers this info without connecting to the beacon. This ensures the user is invisible to all beacons, meaning a user can't be tracked simply by walking past a broadcasting beacon. This was very much by design to keep users silent passage untrackable. However, once the user does click on a URL, they are then known to that website. 
+Our current URL broadcast method involves a bluetooth broadcast from each beacon. The user's phone gathers this info without connecting to the beacon. This ensures the user is invisible to all beacons, meaning a user can't be tracked simply by walking past a broadcasting beacon. This was very much by design to keep users silent passage untrackable. However, once the user does click on a URL, they are then known to that website.
 
 The search agent on the phone may keep track of which devices the user taps on so they can improve the ranking in the future. Of course, this too needs to be discussed and then possibly offered to the user as an option so they are in control of how this information is stored.
 
